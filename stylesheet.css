@@ -1,0 +1,189 @@
+
+/* ========== Global Styles ========== */
+
+body {
+  margin: 0;
+  background-color: black;
+  color: seashell;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+}
+
+/* ========== Main Header ========== */
+
+#mainheader {
+  font-family: sans-serif;
+  background-color: black;
+  border-bottom: 1px solid seashell;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 69px;
+  align-items: center;
+  display: flex;
+}
+
+#mainheader .container {
+  flex-grow: 1;
+  margin-left: 10px;
+}
+
+#header-logo {
+  font-size: 0; /* Mitigates extra pixels from whitespace */
+  flex-grow: 1;
+}
+
+#header-logo > img {
+  height: 50px;
+}
+
+#header-nav span {
+  font-size: 22px;
+  margin: 0 10px;
+}
+
+#header-nav a {
+  color: white;
+}
+
+/* ========== All Main Content ========== */
+
+#maincontent {
+  font-family: sans-serif;
+  margin-top: 70px;
+}
+
+.blackbox {
+  background-color: black;
+  text-align: center;
+}
+
+/* ========== Main Content - Our Mission ========== */
+
+#mission {
+  height: 700px;
+  width: 1200px;
+  margin: 0 auto;
+  background-image: url("img/enigmamachine.png");
+}
+
+#mission > .blackbox {
+  width: 100%;
+}
+
+#mission .blackbox > h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#mission .blackbox > h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* ========== Main Content - Featured Tea ========== */
+
+#featured {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+#featured > h1, #featured > h3 {
+  text-align: center;
+}
+
+#featured h3 {
+  font-size: 22px;
+}
+
+#featured > .container {
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.tea-feature {
+  text-align: center;
+  margin: 0 15px;
+}
+
+.tea-image {
+  width: 300px;
+  height: 200px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.tea-feature h3 {
+  margin-top: 0;
+}
+
+/* ========== Main Content - Locations ========== */
+
+#locations {
+  width: 1200px;
+  height: 600px;
+  margin: 0 auto;
+  background-image: url("../images/img-locations-background.jpg");
+  justify-content: center;
+  text-align: center;
+}
+
+#locations .row {
+  display: flex;
+}
+
+#locations .blackbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /*height: 300px;*/
+  width: 300px;
+  margin: 0 20px;
+}
+
+#locations .blackbox h2 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+#locations .blackbox > h3 {
+  font-weight: normal;
+  font-size: 22px;
+}
+
+/* ========== Main Content - Footer ========== */
+
+#mainfooter {
+  font-family: sans-serif;
+  padding-top: 10px;
+}
+
+#contactinfo {
+  text-align: center;
+  height: 200px;
+}
+
+#contactinfo h1 {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-size: 36px;
+}
+
+#mainfooter h5 {
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+#mainfooter .copyright {
+  text-align: left;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
