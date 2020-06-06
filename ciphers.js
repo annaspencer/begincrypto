@@ -61,3 +61,22 @@ document.forms["caesarCipher"].onsubmit = function(){
   alert(f);
   return false;
 }
+
+function caesarCipherdecode(str, key = (-3)){
+  let decode = '';
+  for(let i = 0; i < str.length; i++){
+    if(isUpperCase(str[i])){
+      decode += String.fromCharCode((str.charCodeAt(i) + key - 65) % 26 + 65);
+    }else{
+      decode += String.fromCharCode((str.charCodeAt(i) + key - 97) % 26 + 97);
+    }
+  }
+  return decode;
+}
+
+document.forms["decodecaesar"].onsubmit = function(){
+  var s = document.getElementById("decodecaesar").value;
+  var f = caesarCipherdecode(s);
+  alert(f);
+  return false;
+}
