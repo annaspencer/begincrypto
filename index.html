@@ -33,7 +33,7 @@
             <h3>Atbash Cipher</h3>
         
             <form name="atbash" action="">
-            Type your message:<br>
+            Type your message to encrypt or decrypt:<br>
             <input type="text" name="atbash" id="atbash"><br>
             <input type="submit" value="Submit">
             </form>
@@ -42,7 +42,7 @@
             <img class="wheel-image" src="img/ROT13.png" alt="ROT13" />
             <h3>ROT13</h3>
             <form name="rot13" action="">
-            Type your message:<br>
+            Type your message to encrypt or decrypt:<br>
             <input type="text" name="rot13" id="rot13"><br>
             <input type="submit" value="Submit">
             </form>
@@ -51,11 +51,17 @@
             <img class="wheel-image" src="img/caesar.png" alt="Caesar" />
             <h3>Caesar Cipher</h3>
             <form name="caesarCipher" action="">
-            Type your message:<br>
+            Type your message to encrypt:<br>
             <input type="text" name="caesarCipher" id="caesarCipher"><br>
             <input type="submit" value="Submit">
+             </form>
+            <form name="decodecaesar" action="">
+            Type your message to decrypt:<br>
+            <input type="text" name="decodecaesar" id="decodecaesar"><br>
+            <input type="submit" value="Submit">
+            </form>
           </div>
-        <h4> * Note that Atbash and Rot13 can <i>encrypt</i> and <i>decrypt</i>, while the Casesar Cipher used here will only <i>encrypt<i/>. It has a set key of +3, so to decrypt, you will need to use a key of -3.</h4>
+        <h4> * Note that Atbash and Rot13 can <i>encrypt</i> and <i>decrypt</i>, while the Casesar Cipher used here needs to encrypt and decrypt separately. It has a set key of +3, so to decrypt, you will need to use a key of -3.</h4>
       
         </div>
       </div>
