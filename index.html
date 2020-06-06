@@ -6,20 +6,10 @@
     <title>Beginner Cryptography</title>
   </head>
   <body>
-    <header id="mainheader">
-      <div class="container">
-        <div id="header-logo">
-         
-        </div>
-        <nav id="header-nav">
-          <span><a href="#mission">Learn</a></span>
-          <span><a href="#featured">Practice</a></span>
-          <span><a href="#locations">Test Yourself</a></span>
-        </nav>
-      </div>
-    </header>
+    
+    
     <main id="maincontent">
-      <div id="mission" class="container">
+      <div id="learn" class="container">
         <div class="blackbox">
           <h2>Learn Hand Ciphers</h2>
           <h4>Hand Ciphers are a method to encrypt messages. These methods have been used to hide communications since ancient times.</h4>
@@ -29,45 +19,68 @@
         <div id="featured">
         <h1>Try It!</h1>
         <h3>Substitution Ciphers</h3>
+        <p>
+        <ul>
+        <li>The <b>Atbash Cipher</b> was originally a substitution cipher used for the Hebrew alphabet. It is one of the earliest known ciphers to have been used, and is very simple. The first letter of the English Latin alphabet "A" is replaced by the last letter "Z", "B" becomes "Y" and so forth.</li>
+        <li> <b>ROT13 </b>is another substitution cipher. In the English Latin alphabet, the characters are "rotated" after the 13th letter. So "A" becomes "N" and "B" becomes "O". </li>
+        <li> <b>Caesar Cipher</b> is a substitution cipher that also uses a <i> key </i> or shift. The key is a numerical value of how many letters down the alphabet after the first letter the <i>plaintext</i> letter becomes in the <i>ciphertext</i>. For example, with a shift or key of 3, "A" becomes "D". A 3 letter shift is known to have been used by Julius Caesar. </li>
+                        </ul>
+        </p>
         <div class="container">
-          <div class="tea-feature">
-            <img class="tea-image" src="img/atbash.png" alt="Atbash" />
+          <div class="ciphers">
+            <img class="wheel-image" src="img/atbash.png" alt="Atbash" />
+            
             <h3>Atbash Cipher</h3>
-          </div>
-          <div class="tea-feature">
-            <img class="tea-image" src="img/ROT13.png" alt="ROT13" />
-            <h3>ROT13</h3>
-          </div>
-          <div class="tea-feature">
-            <img class="tea-image" src="img/caesar.png" alt="Caesar" />
-            <h3>Caesar Cipher</h3>
-          </div>
         
+            <form name="atbash" action="">
+            Type your message:<br>
+            <input type="text" name="atbash" id="atbash"><br>
+            <input type="submit" value="Submit">
+            </form>
+          </div>
+          <div class="ciphers">
+            <img class="wheel-image" src="img/ROT13.png" alt="ROT13" />
+            <h3>ROT13</h3>
+            <form name="rot13" action="">
+            Type your message:<br>
+            <input type="text" name="rot13" id="rot13"><br>
+            <input type="submit" value="Submit">
+            </form>
+          </div>
+          <div class="ciphers">
+            <img class="wheel-image" src="img/caesar.png" alt="Caesar" />
+            <h3>Caesar Cipher</h3>
+            <form name="caesarCipher" action="">
+            Type your message:<br>
+            <input type="text" name="caesarCipher" id="caesarCipher"><br>
+            <input type="submit" value="Submit">
+          </div>
+        <h4> * Note that Atbash and Rot13 can <i>encrypt</i> and <i>decrypt</i>, while the Casesar Cipher used here will only <i>encrypt<i/>. It has a set key of +3, so to decrypt, you will need to use a key of -3.</h4>
       
         </div>
       </div>
-      <div id="locations" class="container">
+      <div id="codes" class="container">
         <div>
           <h1>Test Yourself! </h1>
           <h3>Guess the encryption method and code on paper. Then use Try It! above for each cipher method.</h3>
           <div class="row">
             <div class="blackbox">
-              <h2>Code</h2>
-              <h3>code</h3>
-              <h3>code</h3>
-              <h3>code</h3>
+              <h3>nzib jfvvm lu hxlgh</h3>
+              <h3>Zigsfi Arnnvinzmm</h3>
+              <h3>Vfbebxh Lnznzbgb</h3>
+              <h3>Hgjdu Doodq Srh</h3>
             </div>
             <div class="blackbox">
-              <h2>Code</h2>
-              <h3>code</h3>
-              <h3>code</h3>
-              <h3>code</h3>
+              <h3>Gur Onovatgba Cybg </h3>
+              <h3>Mvzzreznaa Gryrtenz</h3>
+              <h3>Yzggov lu Nrwdzb</h3>
+              <h3>Wkh Jrog Exj</h3>
             </div>
             <div class="blackbox">
-              <h2>Code</h2>
-              <h3>code</h3>
-              <h3>code</h3>
-              <h3>code</h3>
+              <h3>Gsviv yv nzmb nvzmh rm szmw gl ivnlev gsv yvzhg gszg gilfyovh gsv dliow</h3>
+              <h3>Gung jr funyy znxr jne gbtrgure naq gbtrgure znxr crnpr. Jr funyy tvir trareny svanapvny fhccbeg, naq vg vf haqrefgbbq gung Zrkvpb vf gb erpbadhre gur ybfg greevgbel va Arj Zrkvpb, Grknf naq Nevmban.</h3>
+              <h3>DI vkruw rq iuhvk zdwhu</h3>
+              <h3>Vg jnf rneyl fcevat, jnez naq fhygel tybjrq gur nsgreabba. Gur irel oerrmrf frrzrq gb funer gur qryvpvbhf ynathbe bs havirefny angher</h3>
             </div>
           </div>
         </div>
@@ -75,11 +88,13 @@
     </main>
     <footer id="mainfooter">
       <div id="contactinfo">
-        <h1>annaspencerdev@gmail.com</h1>
+        <h5>annaspencerdev@gmail.com</h5>
         <h5></p>
         <h5></p>
       </div>
       <h5 class="copyright">copyright Anna Spencer 2020</p>
     </footer>
+    <script src="ciphers.js"></script>
   </body>
+
 </html>
