@@ -6,5 +6,13 @@
 
 A beginning cryptography for 12 year olds or people who like the aesthetic appeal of geocities sites
 
-<h4> Improvements needed: design, content. <h4>
+<h4> Improvements needed: <h4>
+  <ul>redesign : 
+  <li> easier to read</li>
+    <li> aesthetically appealing to younger audiences/STEM students/classroom settings</li>
+    <li> add some clue pictures for the coded messages</li></ul>
+  
+  <li> add resources pages</li>
+  <li> add for parents/teachers page</li>
+  
 
