@@ -2,105 +2,217 @@
 <html>
   <head>
     <meta charset="utf-8">
+   
     <link rel="stylesheet" href="stylesheet.css">
-    <title>Beginner Cryptography</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <title>Beginner Cryptography</title>
   </head>
   <body>
-    
-    
-    <main id="maincontent">
-      <div id="learn" class="container">
-        <div class="blackbox">
-          <h2>Learn Hand Ciphers</h2>
-          <h4>Hand Ciphers are a method to encrypt messages. These methods have been used to hide communications since ancient times.</h4>
-        </div>
-      </div>
-      <div id="featured">
-        <div id="featured">
-        <h1>Try It!</h1>
-        <h3>Substitution Ciphers</h3>
-        <p>
-        <ul>
-        <li>The <b>Atbash Cipher</b> was originally a substitution cipher used for the Hebrew alphabet. It is one of the earliest known ciphers to have been used, and is very simple. The first letter of the English Latin alphabet "A" is replaced by the last letter "Z", "B" becomes "Y" and so forth.</li>
-        <li> <b>ROT13 </b>is another substitution cipher. In the English Latin alphabet, the characters are "rotated" after the 13th letter. So "A" becomes "N" and "B" becomes "O". </li>
-        <li> <b>Caesar Cipher</b> is a substitution cipher that also uses a <i> key </i> or shift. The key is a numerical value of how many letters down the alphabet after the first letter the <i>plaintext</i> letter becomes in the <i>ciphertext</i>. For example, with a shift or key of 3, "A" becomes "D". A 3 letter shift is known to have been used by Julius Caesar. </li>
-                        </ul>
-        </p>
-        <div class="container">
-          <div class="ciphers">
-            <img class="wheel-image" src="img/atbash.png" alt="Atbash" />
-            
-            <h3>Atbash Cipher</h3>
-        
-            <form name="atbash" action="">
-            Type your message to encrypt or decrypt:<br>
-            <input type="text" name="atbash" id="atbash"><br>
-            <input type="submit" value="Submit">
-            </form>
-          </div>
-          <div class="ciphers">
-            <img class="wheel-image" src="img/ROT13.png" alt="ROT13" />
-            <h3>ROT13</h3>
-            <form name="rot13" action="">
-            Type your message to encrypt or decrypt:<br>
-            <input type="text" name="rot13" id="rot13"><br>
-            <input type="submit" value="Submit">
-            </form>
-          </div>
-          <div class="ciphers">
-            <img class="wheel-image" src="img/caesar.png" alt="Caesar" />
-            <h3>Caesar Cipher</h3>
-            <form name="caesarCipher" action="">
-            Type your message to encrypt:<br>
-            <input type="text" name="caesarCipher" id="caesarCipher"><br>
-            <input type="submit" value="Submit">
-             </form>
-            <form name="decodecaesar" action="">
-            Type your message to decrypt:<br>
-            <input type="text" name="decodecaesar" id="decodecaesar"><br>
-            <input type="submit" value="Submit">
-            </form>
-          </div>
-        <h4> * Note that Atbash and Rot13 can <i>encrypt</i> and <i>decrypt</i>, while the Casesar Cipher used here needs to encrypt and decrypt separately. It has a set key of +3, so to decrypt, you will need to use a key of -3.</h4>
-      
-        </div>
-      </div>
-      <div id="codes" class="container">
-        <div>
-          <h1>Test Yourself! </h1>
-          <h3>Guess the encryption method and code on paper. Then check your work with Try It! above.</h3>
-          <div class="row">
-            <div class="blackbox">
-              <h3>nzib jfvvm lu hxlgh</h3>
-              <h3>Zigsfi Arnnvinzmm</h3>
-              <h3>Vfbebxh Lnznzbgb</h3>
-              <h3>Hgjdu Doodq Srh</h3>
-            </div>
-            <div class="blackbox">
-              <h3>Gur Onovatgba Cybg </h3>
-              <h3>Mvzzreznaa Gryrtenz</h3>
-              <h3>Yzggov lu Nrwdzb</h3>
-              <h3>Wkh Jrog Exj</h3>
-            </div>
-            <div class="blackbox">
-              <h3>Gsviv yv nzmb nvzmh rm szmw gl ivnlev gsv yvzhg gszg gilfyovh gsv dliow</h3>
-              <h3>Gung jr funyy znxr jne gbtrgure naq gbtrgure znxr crnpr. Jr funyy tvir trareny svanapvny fhccbeg, naq vg vf haqrefgbbq gung Zrkvpb vf gb erpbadhre gur ybfg greevgbel va Arj Zrkvpb, Grknf naq Nevmban.</h3>
-              <h3>DI vkruw rq iuhvk zdwhu</h3>
-              <h3>Vg jnf rneyl fcevat, jnez naq fhygel tybjrq gur nsgreabba. Gur irel oerrmrf frrzrq gb funer gur qryvpvbhf ynathbe bs havirefny angher</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-    <footer id="mainfooter">
-      <div id="contactinfo">
-        <h5>annaspencerdev@gmail.com</h5>
-        <h5></p>
-        <h5></p>
-      </div>
-      <h5 class="copyright">copyright Anna Spencer 2020</p>
-    </footer>
-    <script src="ciphers.js"></script>
-  </body>
 
-</html>
+  <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+  <a class="navbar-brand" href="#">Beginner Cryptography for Students!</a>
+  <button class="navbar-toggler" type="button"
+          data-toggle="collapse" data-target="#content">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="content">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+             <a class="nav-link" href="info.html">Info for Teachers & Parents</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="info.html">More Cryptography Resources</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="info.html">Contact</a>
+            </li>
+            
+        </ul>
+     </div>
+    </nav>
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="img/annie-spratt-PKq3htZdTto-unsplash.jpg" height="480px"; alt="First slide">
+       <div class="carousel-caption d-none d-md-block ">
+    <h1 class="text-center">Learn Cipher Basics</h1>
+   
+    
+  </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/anas-alshanti-feXpdV001o4-unsplash.jpg"  height="480px" alt="Second slide">
+       <div class="carousel-caption d-none d-md-block">
+    <h1>Write Secret Codes</h1>
+    
+  </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/markus-spiske-iar-afB0QQw-unsplash.jpg" height="480px" alt="Third slide">
+      <div class="carousel-caption d-none d-md-block">
+    <h1>Decrypt Secret Codes</h1>
+    
+  </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<div class="container">
+<h3 class="text-center mt-5 mb-5">
+  Hand Ciphers are hand written secret codes!
+  <small class="text-muted ">For over 2000 years hand ciphers have been used by Kings, Queens, Military leaders, Spies, and Scientists to write secret messages.</small>
+</h3>
+</div>
+  <div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+         <h4 class="text-center">Learn about the Atbash Cipher</h4>
+        </button>
+      </h2>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+        The Atbash Cipher was originally a substitution cipher used for the Hebrew alphabet. It is one of the earliest known ciphers to have been used, and is very simple. The first letter of the English Latin alphabet "A" is replaced by the last letter "Z", "B" becomes "Y" and so forth. Create your own secret code with Atbash!
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          <h4 class="text-center">Learn about ROT13</h4>
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+        <b>ROT13 </b>is another substitution cipher. In the English Latin alphabet, the characters are "rotated" after the 13th letter. So "A" becomes "N" and "B" becomes "O". 
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+         <h4 class="text-center">Learn about the Caesar Cipher</h4>
+        </button>
+      </h2>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+        <b>Caesar Cipher</b> is a substitution cipher that also uses a <i> key </i> or shift. The key is a numerical value of how many letters down the alphabet after the first letter the <i>plaintext</i> letter becomes in the <i>ciphertext</i>. For example, with a shift or key of 3, "A" becomes "D". A 3 letter shift is known to have been used by Julius Caesar.
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card-group">
+  <div class="card">
+    <img src="img/atbash.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Atbash Cipher</h5>
+      
+      <form name="atbash" action="">
+        <div class="form-group">
+            Type your message to encrypt or decrypt:<br>
+            <input type="text" class="form-control" name="atbash" id="atbash"><br>
+            <input type="submit" class="btn btn-primary" value="Submit">
+            </form>
+          </div>
+    
+    </div>
+  </div>
+  <div class="card">
+    <img src="img/ROT13.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">ROT13</h5>
+      <form name="rot13" action="">
+        Type your message to encrypt or decrypt:<br>
+        <input type="text" class="form-control" name="rot13" id="rot13"><br>
+        <input type="submit" class="btn btn-primary" value="Submit">
+        </form>
+    </div>
+  </div>
+  <div class="card">
+    <img src="img/caesar.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Caesar Cipher</h5>
+      <form name="caesarCipher" action="">
+        Type your message to encrypt:<br>
+        <input type="text" class="form-control" name="caesarCipher" id="caesarCipher"><br>
+        <input type="submit" class="btn btn-primary" value="Submit">
+         </form>
+         <p> * Note that Atbash and Rot13 can <i>encrypt</i> and <i>decrypt</i>, while the Casesar Cipher used here needs to encrypt and decrypt separately. It has a set key of +3, so to decrypt, you will need to use a key of -3.</p>
+         <form name="decodecaesar" action="">
+          Type your message to decrypt:<br>
+          <input type="text" class="form-control" name="decodecaesar" id="decodecaesar"><br>
+          <input type="submit" class="btn btn-primary" value="Submit">
+          </form>
+    </div>
+  </div>
+</div>
+<div class="container-fluid bg-info height=350px">
+  <h1 class="text-center">Practice</h1>
+  <p class="text-center text-monospace">Guess the encryption method: Atbash, ROT13, or Caesar? Try your secret code on paper. Then check your work with the ciphers above!</p>
+</div>
+<div class="card-group">
+  <div class="card">
+    <img src="img/pexels-pixabay-260024.jpg" class="card-img-top" alt="Chess Pieces">
+    <div class="card-body">
+      <h5 class="card-title">*Hint* Famous Historical Figure</h5>
+      <ol>
+      <br>
+      <li><h3>nzib jfvvm lu hxlgh</h3></li>
+      <br>
+     <li><h3>Zigsfi Arnnvinzmm</h3></li> 
+      <br>
+    <li> <h3>Vfbebxh Lnznzbgb</h3></li> 
+      <br>
+    <li> <h3>Hgjdu Doodq Srh</h3></li> 
+    </ol>
+    </div>
+  </div>
+  <div class="card">
+    <img src="img/midway.png" class="card-img-top" height="280px" alt="Battle of Midway Ship">
+    <div class="card-body">
+      <h5 class="card-title">*Hint* Event</h5>
+      <ol>
+      <br>
+      <li><h4>Gur Onovatgba Cybg </h4></li>
+      <br>
+      <li><h4>Mvzzreznaa Gryrtenz</h4></li>
+      <br>
+      <li><h4>Yzggov lu Nrwdzb</h4></li>
+      <br>
+      <li><h4>Wkh Jrog Exj</h4></li>
+    </ol>
+    </div>
+  </div>
+  <div class="card">
+    <img src="img/pexels-pixabay-261763.jpg" class="card-img-top" height="280px" alt="Secret Code Text">
+    <div class="card-body">
+      <h5 class="card-title">*Hint* Secret Code</h5>
+      <ol>
+      <li><p>Gsviv yv nzmb nvzmh rm szmw gl ivnlev gsv yvzhg gszg gilfyovh gsv dliow</p></li>
+      <li><p>Gung jr funyy znxr jne gbtrgure naq gbtrgure znxr crnpr. Jr funyy tvir trareny svanapvny fhccbeg, naq vg vf haqrefgbbq gung Zrkvpb vf gb erpbadhre gur ybfg greevgbel va Arj Zrkvpb, Grknf naq Nevmban.</p></li>
+      <li><p>DI vkruw rq iuhvk zdwhu</p></li>
+      <li><p>Vg jnf rneyl fcevat, jnez naq fhygel tybjrq gur nsgreabba. Gur irel oerrmrf frrzrq gb funer gur qryvpvbhf ynathbe bs havirefny angher</p></li>
+    </ol>
+    </div>
+  </div>
+</div>
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="ciphers.js"></script>
+  </html>
