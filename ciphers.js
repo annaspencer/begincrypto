@@ -1,23 +1,29 @@
+// HI, if you're here it's probably because I submitted my github for review. This is a personal project I made for fun! As result, school and work 
+// projects take priority. But I like to come back and update every so often. I would like to add jquery and clear inputs...one day...:)
+
+
+
 //atbash cipher
 atbash("ZYX");
 function atbash(message) {
-var alphabet = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz ";
-var tebahpla = "ZzYyXxWwVvUuTtSsRrQqPpOoNnMmLlKkJjIiHhGgFfEeDdCcBbAa ";
-var decoded_string = "";
+const alphabet = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz ";
+const tebahpla = "ZzYyXxWwVvUuTtSsRrQqPpOoNnMmLlKkJjIiHhGgFfEeDdCcBbAa ";
+let decoded_string = "";
 
 for (i = 0; i < message.length; i++) {
-    var coded_letter = message.charAt(i);
-    var letter_index = alphabet.indexOf(coded_letter);
-    var decoded_letter = tebahpla.charAt(letter_index);
+    let coded_letter = message.charAt(i);
+    let letter_index = alphabet.indexOf(coded_letter);
+    let decoded_letter = tebahpla.charAt(letter_index);
     decoded_string = decoded_string + decoded_letter;
 }
 return decoded_string;
 }
-
+// change this to JQuery!
 document.forms["atbash"].onsubmit = function(){
-  var s = document.getElementById("atbash").value;
-  var f = atbash(s);
-  alert(f);
+  const s = document.getElementById("atbash").value;
+  let f = atbash(s);
+  swal(f);
+  s.delete()
   return false;
 }
 
@@ -30,19 +36,20 @@ function rot13Fast(str) {
 rot13Fast.input  = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'.split('')
 rot13Fast.output = 'NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm'.split('')
 rot13Fast.lookup = rot13Fast.input.reduce((m,k,i) => Object.assign(m, {[k]: rot13Fast.output[i]}), {})
-  
+
+ //change this to jquery! 
 document.forms["rot13"].onsubmit = function(){
-    var s = document.getElementById("rot13").value;
-    var f = rot13Fast(s);
-    alert(f);
+    const s = document.getElementById("rot13").value;
+    let f = rot13Fast(s);
+    swal(f);
     return false;
 }
   //caesarcipher
-
+//change to uniform characters
   function isUpperCase(str) {
     return str === str.toUpperCase();
 }
-
+//caesar cipher logic with default key of 3
 function caesarCipher(str, key = 3){
   let decipher = '';
   for(let i = 0; i < str.length; i++){
@@ -55,10 +62,11 @@ function caesarCipher(str, key = 3){
   return decipher;
 }
 
+//change this to jquery!
 document.forms["caesarCipher"].onsubmit = function(){
-  var s = document.getElementById("caesarCipher").value;
-  var f = caesarCipher(s);
-  alert(f);
+  const s = document.getElementById("caesarCipher").value;
+  let f = caesarCipher(s);
+  swal(f);
   return false;
 }
 
@@ -73,10 +81,11 @@ function caesarCipherdecode(str, key = (-3)){
   }
   return decode;
 }
-
+//change to jquery!
 document.forms["decodecaesar"].onsubmit = function(){
-  var s = document.getElementById("decodecaesar").value;
-  var f = caesarCipherdecode(s);
-  alert(f);
+  const s = document.getElementById("decodecaesar").value;
+  let f = caesarCipherdecode(s);
+  
+  swal(f);
   return false;
 }
