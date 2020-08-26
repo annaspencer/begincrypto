@@ -1,150 +1,16 @@
 
-/* ========== Global Styles ========== */
 
-body {
-  margin: 0;
-  background-color: black;
-  color: seashell;
+.swal-overlay {
+  background-color: rgba(43, 165, 137, 0.45);
 }
 
-.container {
-  align-items: center;
-  display: flex;
-}
-
-/* ========== All Main Content ========== */
-
-#maincontent {
-  font-family: sans-serif;
-  margin-top: 70px;
-}
-
-.blackbox {
-  background-color: black;
-  text-align: center;
-}
-
-/* ========== Main Content - Our Mission ========== */
-
-#learn {
-  height: 700px;
-  width: 1200px;
-  margin: 0 auto;
-  background-image: url("img/enigmamachine.png");
-}
-
-#learn > .blackbox {
-  width: 100%;
-}
-
-#learn .blackbox > h2 {
-  font-size: 30px;
-  font-weight: bold;
-  margin-top: 10px;
-}
-
-#learn .blackbox > h4 {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-/* ========== Main Content - cipher apps ========== */
-
-#featured {
-  width: 1000px;
-  margin: 0 auto;
-}
-
-#featured > h1, #featured > h3 {
-  text-align: center;
-}
-
-#featured h3 {
-  font-size: 22px;
-}
-
-#featured > .container {
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-bottom: 50px;
-}
-
-.ciphers {
-  text-align: center;
-  margin: 0 15px;
-}
-
-.wheel-image {
-  width: 300px;
-  height: 200px;
+.swal-text {
+  background-color: rgb(5, 5, 5);
+  padding: 17px;
+  border: 1px solid rgb(161, 237, 240);
   display: block;
-  margin-bottom: 10px;
-}
-
-.ciphers h3 {
-  margin-top: 0;
-}
-
-/* ========== Main Content - Locations ========== */
-
-#codes {
-  
-  margin: 0 auto;
-
-  justify-content: center;
+  margin: 22px;
   text-align: center;
+  font-family: monospace;
+  color: hsl(0, 0%, 100%);
 }
-
-#codes .row {
-  display: flex;
-}
-
-#codes .blackbox {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  /*height: 300px;*/
-  width: 300px;
-  margin: 0 20px;
-}
-
-#codes .blackbox h2 {
-  font-size: 24px;
-  margin-bottom: 12px;
-}
-
-#codes .blackbox > h3 {
-  font-weight: normal;
-  font-size: 22px;
-}
-
-/* ========== Main Content - Footer ========== */
-
-#mainfooter {
-  font-family: sans-serif;
-  padding-top: 10px;
-}
-
-#contactinfo {
-  text-align: center;
-  height: 200px;
-}
-
-#contactinfo h1 {
-  margin-top: 0;
-  margin-bottom: 40px;
-  font-size: 36px;
-}
-
-#mainfooter h5 {
-  margin-bottom: 0;
-  font-size: 20px;
-}
-
-#mainfooter .copyright {
-  text-align: left;
-  margin-left: 20px;
-  font-size: 20px;
-}
-
