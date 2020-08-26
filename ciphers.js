@@ -23,7 +23,7 @@ document.forms["atbash"].onsubmit = function(){
   const s = document.getElementById("atbash").value;
   let f = atbash(s);
   swal(f);
-  s.delete()
+  
   return false;
 }
 
