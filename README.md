@@ -4,7 +4,7 @@
 
 <This is an original mini project to demostrate how hand ciphers can be used :)>
 
-A beginning cryptography for 12 year olds or people who like the aesthetic appeal of geocities sites
+This page is a work in progress. The goal is to teach the very basics of cryptography by decrypting and encrypting secret codes! The historical code references are for junior high to highschool level. 
 
 <h4> Improvements needed: <h4>
   <ul>redesign : 
